@@ -1,0 +1,44 @@
+version: '3.3'
+
+services:
+  frontend:
+    container_name: frontend-container  
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    ports:
+      - "8080:8080"
+    networks:
+      - fase-one-network
+    depends_on:
+      - node
+  db:  
+    container_name: mysql-container
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    ports:
+      - "3307:3307"
+    networks:
+      - fase-one-network
+    volumes:
+      - ./volumes/db_data:/var/lib/mysql
+  
+  node:
+    container_name: node-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - fase-one-network
+    depends_on:
+      - db
+networks:
+  fase-one-network:
+    driver: bridge
+

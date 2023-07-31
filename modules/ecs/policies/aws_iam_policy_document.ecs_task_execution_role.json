@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "ecs:RunTask",
+          "ecs:StopTask",
+          "ecs:ListTasks",
+          "ecs:DescribeTasks",
+          "ecs:ListClusters",
+          "ecs:DescribeClusters",
+          "ecs:RegisterTaskDefinition",
+          "ecs:DeregisterTaskDefinition",
+          "ecr:GetDownloadUrlForLayer",
+          "ecr:BatchGetImage",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents",
+          "logs:CreateLogGroup",
+          "logs:CloudWatchLogsFullAccess",
+          "logs:CloudWatchFullAcess",
+          "ecs:CloudWatchFullAccess"
+        ],
+        "Resource": "*"
+      },
+      {
+        "Effect": "Allow",
+        "Action": [
+          "ecr:GetAuthorizationToken"
+        ],
+        "Resource": "*",
+        "Condition": {
+          "StringEquals": {
+            "ecr:Region": "us-east-1"
+          }
+        }
+      }
+    ]
+  }
+  

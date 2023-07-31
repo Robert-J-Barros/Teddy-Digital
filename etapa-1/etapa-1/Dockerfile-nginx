@@ -1,0 +1,6 @@
+FROM nginx:latest
+WORKDIR /front
+run rm -rf /etc/nginx/conf.d/*
+COPY frontend/ .
+COPY build/default.conf /etc/nginx/conf.d/
+EXPOSE 80

@@ -1,0 +1,7 @@
+FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD=123
+ENV MYSQL_USER=admin
+ENV MYSQL_PASSWORD=123
+ENV MYSQL_DATABASE=db_etapa
+EXPOSE 3307
+COPY setup.sql /docker-entrypoint-initdb.d/

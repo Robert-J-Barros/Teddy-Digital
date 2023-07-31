@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Envio de Dados</title>
+</head>
+<body>
+  <form id="meuFormulario">
+    <input type="text" name="nome" placeholder="Nome">
+    <input type="email" name="email" placeholder="Email">
+    <button type="submit">Salvar</button>
+  </form>
+
+  <script>
+    document.getElementById('meuFormulario').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch('/salvar', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(message => alert(message))
+      .catch(error => console.error('Erro:', error));
+    });
+  </script>
+</body>
+</html>
+
