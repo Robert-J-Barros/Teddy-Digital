@@ -108,5 +108,11 @@ Criando Serviço:
 ![](https://bk-projeto-fairness-imov.s3.amazonaws.com/imagens/Captura+de+tela+de+2023-07-31+02-24-36.png)
 
 ## Registre o IP no target group Application load balancer
-![image](https://github.com/Robert-J-Barros/Teddy-Digital/assets/105607298/1bb7650f-4bfe-4ac6-804b-f3497a76501d)
+
+![image](https://github.com/Robert-J-Barros/Teddy-Digital/assets/105607298/3c7c483c-0b42-49e8-bf06-8bf06457305e)
+
+# Etapa 4
+## Monitoramento
+O monitoramento foi feito utilizando o CloudWatch metricas, no qual será analizado o consumo de CPU e RAM. As metricas irão se atualizar a cada 5 minutos.
+![image](https://github.com/Robert-J-Barros/Teddy-Digital/assets/105607298/9d40c106-c1c8-4958-9e30-4bd7d86ebb25)
 
