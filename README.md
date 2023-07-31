@@ -112,7 +112,7 @@ Criando Serviço:
 ![image](https://github.com/Robert-J-Barros/Teddy-Digital/assets/105607298/3c7c483c-0b42-49e8-bf06-8bf06457305e)
 
 ## Acesse a Aplicação
-[fase2.fairness.tech](https://fase3.fairness.tech)
+[fase3.fairness.tech](https://fase3.fairness.tech)
 
 # Etapa 4
 ## Monitoramento
