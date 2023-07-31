@@ -56,7 +56,7 @@ terraform plan
 terraform apply
 ```
 ## Acesse o serviço:
-[fase2.fairness.tech](http://fase2.fairness.tech)
+[fase2.fairness.tech](https://fase2.fairness.tech)
 ## inicialização do serviço
 ```
 git clone https://github.com/Robert-J-Barros/{repository}
@@ -110,6 +110,9 @@ Criando Serviço:
 ## Registre o IP no target group Application load balancer
 
 ![image](https://github.com/Robert-J-Barros/Teddy-Digital/assets/105607298/3c7c483c-0b42-49e8-bf06-8bf06457305e)
+
+## Acesse a Aplicação
+[fase2.fairness.tech](https://fase3.fairness.tech)
 
 # Etapa 4
 ## Monitoramento
